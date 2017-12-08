@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/wedog/vue-dendrogram.svg?branch=master)](https://travis-ci.org/wedog/vue-dendrogram)
 
-Component for [Vue2](https://vuejs.org/index.html).Pull up loading. Pull down refresh.
+Component for [Vue2](https://vuejs.org/index.html). Dendrims used for day difference work..
 
 # Require
 
