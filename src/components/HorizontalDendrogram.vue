@@ -1,12 +1,12 @@
 <template>
     <div>
-        <div class="tree-wrapper" v-for="(process,index1) in processArr" >
+        <div class="tree-wrapper" v-for="(data, index1) in dataList" >
             <div class="title-wraper">
-                <div class="title">{{process.name}}</div>
+                <div class="title">{{data.name}}</div>
             </div>
             <div class="branch">
-                <div v-for="(proData,index) in process.data" :class="['entry', (index+1)===process.data.length?'lv-last':'', index===0?'lv1':'', process.data.length===1?'onyOne':'']">
-                    <div class="desc" @click="goToItem(proData.url)">{{proData.subName}}</div>
+                <div v-for="(subData, index) in data.subData" :class="['entry', (index+1)===data.subData.length?'lv-last':'', index===0?'lv1':'', data.subData.length===1?'onyOne':'']">
+                    <div class="desc" @click="goToItem(subData.url)">{{subData.subName}}</div>
                 </div>
             </div>
         </div>
@@ -18,18 +18,24 @@
             return {}
         },
         props: {
-            processArr: {
+            dataList: {
                 type: Array,
-                default: [],
                 required: true,
-                validator: function (value) {
-                    return value.length >= 0
+                default: function () {
+                    let defaultData = [{
+                        name: 'name',
+                        subData: [{
+                            subName: 'subName',
+                            url: 'url'
+                        }]
+                    }];
+                    return defaultData;
                 }
             }
         },
         methods: {
             goToItem(url){
-                this.$emit('itemEvent', url);
+                this.$emit('itemEvent:url', url);
             }
         }
     }

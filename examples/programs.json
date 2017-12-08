@@ -1,39 +1,36 @@
 [
-  { "name": "java", "year": 20},
-  { "name": "web", "year": 30},
-  { "name": "html", "year": 20},
-  { "name": "javascript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "typescript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "typescript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "typescript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "typescript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "typescript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "typescript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "javascript", "year": 10},
-  { "name": "typescript", "year": 11}
+  {
+    "name": "programming",
+    "subData": [
+      {
+        "subName": "Java",
+        "url": "http://docs.oracle.com/javaee/6/api/"
+      },
+      {
+        "subName": "Javascript",
+        "url": "https://developer.mozilla.org/en-US/docs/Web"
+      }
+    ]
+  },
+  {
+    "name": "programming1",
+    "subData": [
+      {
+        "subName": "Java1",
+        "url": "http://docs.oracle.com/javaee/6/api/"
+      },
+      {
+        "subName": "Javascript1",
+        "url": "https://developer.mozilla.org/en-US/docs/Web"
+      },
+      {
+        "subName": "HTML",
+        "url": "https://developer.mozilla.org/en-US/docs/Web"
+      },
+      {
+        "subName": "CSS",
+        "url": "https://developer.mozilla.org/en-US/docs/Web"
+      }
+    ]
+  }
 ]
