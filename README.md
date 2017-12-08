@@ -1,6 +1,6 @@
 # vue-dendrogram
 
-[![Build Status](https://travis-ci.org/wedog/vue-dendrogram.svg?branch=master)](https://travis-ci.org/wedog/vue-dendrogram)
+[![npm version](https://badge.fury.io/js/vue-dendrogram.svg)](https://badge.fury.io/js/vue-dendrogram) [![Build Status](https://travis-ci.org/wedog/vue-dendrogram.svg?branch=master)](https://travis-ci.org/wedog/vue-dendrogram)
 
 Component for [Vue2](https://vuejs.org/index.html). Dendrims used for day difference work..
 
