@@ -1,4 +1,5 @@
-import Dendrogram from './components/Dendrogram..vue'
+import VerticalDendrogram from './components/VerticalDendrogram.vue'
+import HorizontalDendrogram from './components/HorizontalDendrogram.vue'
 
 export function install(Vue, options){
     let vm = Vue
@@ -6,5 +7,6 @@ export function install(Vue, options){
         return
     }
     install.installed = true
-    vm.component('VueDendrogram', Dendrogram);
+    vm.component('VerticalDendrogram', VerticalDendrogram);
+    vm.component('HorizontalDendrogram', HorizontalDendrogram);
 }

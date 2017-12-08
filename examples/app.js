@@ -29,6 +29,6 @@ new Vue({
         this.getProgramList();
     },
     template: '<div id="app">' +
-        '<vue-dendrogram></vue-dendrogram>' +
+        '<vertical-dendrogram></vertical-dendrogram>' +
     '</div>'
 }).$mount("#app");

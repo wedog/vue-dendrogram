@@ -20,7 +20,27 @@ module.exports = {
     module: {
         rules: [
             { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
-            { test: /\.vue$/, loader: 'vue-loader' },
+            {
+                test: /\.vue$/,
+                use: [
+                    {
+                        loader: 'vue-loader',
+                        options: {
+                            loaders: {
+                                css: ExtractTextPlugin.extract({
+                                    use: "css-loader",
+                                    fallback: 'vue-style-loader'
+                                }),
+                                less: ExtractTextPlugin.extract({
+                                    use: ['css-loader', 'less-loader'],
+                                    fallback: 'vue-style-loader'
+                                })
+                            }
+                        }
+                    }
+                ]
+
+            },
             { test: /\.html$/, loader: 'html-loader' },
             { test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/, use: 'file-loader?name=assets/[name].[hash].[ext]' },
             { test: /\.css$/, use: ExtractTextPlugin.extract({ use: 'css-loader?sourceMap', fallback: 'style-loader' }) },
